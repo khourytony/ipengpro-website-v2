@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Engineering Pro — Edge to Cloud Intelligence</title>
+    <meta name="description" content="IP Engineering Pro architects intelligent, self-optimizing infrastructure — edge, cloud, AI, IoT and cybersecurity unified under one accountable team." />
+    <meta property="og:title" content="IP Engineering Pro — Edge to Cloud Intelligence" />
+    <meta property="og:description" content="Precision engineering for resilient, autonomous networks. Edge • Cloud • AI." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader__inner">
+        <span class="preloader__count" id="preCount">0</span>
+        <span class="preloader__label">Initializing fabric…</span>
+      </div>
+    </div>
+
+    <!-- Announcement ticker -->
+    <div class="ticker" id="ticker">
+      <div class="ticker__row">
+        <div class="ticker__track" id="tickerTrack">
+          <span>Edge-to-Cloud Fabric — 42 regions operational</span><span class="dot">●</span>
+          <span>AI control plane: predictive load + anomaly guardrails active</span><span class="dot">●</span>
+          <span>Zero-trust access enforced across multi-cloud mesh</span><span class="dot">●</span>
+          <span>Carbon-aware routing live — +48% efficiency forecast</span><span class="dot">●</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <a class="brand" href="#top" data-cursor="link" aria-label="IP Engineering Pro home">
+        <img src="./logo ip eng pro final-2-reverse (1).png" alt="" class="brand__mark brand__mark--light" />
+        <img src="./logo ip eng pro final-1.png" alt="" class="brand__mark brand__mark--dark" />
+        <span class="brand__text">
+          <strong>IP Engineering Pro</strong>
+          <em>Edge to Cloud Solutions</em>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" data-cursor="link" aria-expanded="false" aria-controls="menuOverlay">
+        <span class="menu-toggle__dots"><i></i><i></i><i></i><i></i></span>
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+
+      <a href="#contact" class="pill pill--solid header__cta" data-cursor="link">
+        <span>Start a project</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </header>
+
+    <!-- Fullscreen menu overlay -->
+    <nav class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu-overlay__grid">
+        <ul class="menu-overlay__list">
+          <li><a href="#top" data-num="01" data-cursor="link">Home</a></li>
+          <li><a href="#services" data-num="02" data-cursor="link">Services &amp; Solutions</a></li>
+          <li><a href="#global" data-num="03" data-cursor="link">Global</a></li>
+          <li><a href="#contact" data-num="04" data-cursor="link">Contact</a></li>
+        </ul>
+        <div class="menu-overlay__aside">
+          <p class="menu-overlay__eyebrow">Get in touch</p>
+          <a href="mailto:info@ipengpro.com" class="menu-overlay__mail" data-cursor="link">info@ipengpro.com</a>
+          <p class="menu-overlay__phone">+961 1 411 400</p>
+          <div class="menu-overlay__socials">
+            <a href="https://www.linkedin.com/company/ip-engineering-pro" target="_blank" rel="noopener" data-cursor="link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <canvas class="hero__globe" id="globe" aria-hidden="true"></canvas>
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__inner">
+          <p class="hero__eyebrow reveal"><span class="spark">✦</span> Edge • Cloud • AI</p>
+          <h1 class="hero__title">
+            <span class="line reveal"><span>Every layer</span></span>
+            <span class="line reveal"><span>of your</span></span>
+            <span class="line reveal"><span class="grad">infrastructure.</span></span>
+          </h1>
+          <p class="hero__sub reveal">We architect intelligent systems that sense, decide and adapt — linking your edge, cloud and AI workloads into a single, secure, self-optimizing fabric.</p>
+          <div class="hero__actions reveal">
+            <a href="#contact" class="pill pill--solid" data-magnetic data-cursor="link"><span>Start a project</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#services" class="pill pill--ghost" data-magnetic data-cursor="link"><span>Explore services</span></a>
+          </div>
+        </div>
+        <div class="hero__badge" aria-hidden="true">
+          <span>Edge • Cloud • Data</span>
+        </div>
+        <a href="#statement" class="hero__scroll" data-cursor="link" aria-label="Scroll down">
+          <span>Scroll</span>
+          <i></i>
+        </a>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Intelligent Automation</span><em>✦</em>
+          <span>Edge Computing</span><em>✦</em>
+          <span>Multi-Cloud Mesh</span><em>✦</em>
+          <span>Zero-Trust Security</span><em>✦</em>
+          <span>AI Orchestration</span><em>✦</em>
+          <span>IoT Ecosystems</span><em>✦</em>
+          <span>Intelligent Automation</span><em>✦</em>
+          <span>Edge Computing</span><em>✦</em>
+          <span>Multi-Cloud Mesh</span><em>✦</em>
+          <span>Zero-Trust Security</span><em>✦</em>
+          <span>AI Orchestration</span><em>✦</em>
+          <span>IoT Ecosystems</span><em>✦</em>
+        </div>
+      </div>
+
+      <!-- ============ STATEMENT ============ -->
+      <section class="statement" id="statement">
+        <div class="statement__head">
+          <p class="eyebrow reveal">One operator</p>
+          <h2 class="statement__title reveal-stagger">
+            <span>We architect.</span>
+            <span class="muted">We own</span>
+            <span>the outcome.</span>
+          </h2>
+        </div>
+        <div class="statement__body">
+          <div class="statement__media reveal" data-parallax="0.12">
+            <img src="./Network-Design-scaled.jpeg" alt="Network design blueprint" loading="lazy" />
+          </div>
+          <div class="statement__text">
+            <p class="reveal">With every service under one roof and one accountable team, your infrastructure moves the way your business demands: predictably, transparently, and without excuses.</p>
+            <p class="reveal">That means no finger-pointing between vendors. No capability lost in handoffs. Just one team, accountable from edge to cloud.</p>
+            <a href="#global" class="pill pill--dark" data-magnetic data-cursor="link"><span>Learn more about us</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES & SOLUTIONS ============ -->
+      <section class="solutions" id="services">
+        <div class="section-head section-head--light">
+          <p class="eyebrow reveal">Services &amp; solutions</p>
+          <h2 class="section-title reveal">Everything you need, <span class="grad-ink">from edge to cloud.</span></h2>
+          <p class="section-lede reveal">One accountable team delivering the full stack — from AI-powered infrastructure and intelligent networks to zero-trust security and 24/7 managed operations.</p>
+        </div>
+
+        <div class="sol-grid">
+          <article class="sol reveal" data-cursor="view" tabindex="0">
+            <div class="sol__media">
+              <img src="./data-transfer-cloud-computing-technology-600nw-2161779273.jpg" alt="Edge to cloud data transfer" loading="lazy" />
+              <span class="sol__index">01</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 15a4 4 0 0 0 4 4h10a4 4 0 0 0 0-8 6 6 0 0 0-11.5-1.5A4 4 0 0 0 3 15Z"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Edge to Cloud<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">AI-powered orchestration seamlessly integrates edge computing with cloud infrastructure. Our intelligent systems automatically optimize data flow, resource allocation and processing efficiency across your entire technology stack.</p>
+              <div class="sol__tags"><span>Data Center</span><span>Private Cloud</span><span>HCI</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0" style="transition-delay:.06s">
+            <div class="sol__media">
+              <img src="./infovista_agentic_ai_homepage_banner.jpg" alt="Artificial intelligence" loading="lazy" />
+              <span class="sol__index">02</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM4 10h2M4 14h2M18 10h2M18 14h2M10 4v2M14 4v2M10 18v2M14 18v2"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Artificial Intelligence<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">Deploy advanced AI accelerators and neural networks to automate complex workflows, predict system behavior and enable real-time decision making. Our ML models continuously learn and adapt to optimize your operations.</p>
+              <div class="sol__tags"><span>AI Accelerators</span><span>Surveillance</span><span>Healthcare</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0" style="transition-delay:.12s">
+            <div class="sol__media">
+              <img src="./web-4841856_1280.jpg" alt="Internet of Things" loading="lazy" />
+              <span class="sol__index">03</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12a10 10 0 0 1 14 0M8 15.5a5.5 5.5 0 0 1 8 0"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Internet of Things<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">AI-enhanced IoT platforms that intelligently manage millions of connected devices. Machine learning algorithms analyze sensor data in real-time, predicting maintenance needs and optimizing device performance autonomously.</p>
+              <div class="sol__tags"><span>VHF IoT Network</span><span>BLE Solutions</span><span>Edge Computing</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0">
+            <div class="sol__media">
+              <img src="./close-up-illuminated-computer_1048944-29093318.jpg" alt="Infrastructure solutions" loading="lazy" />
+              <span class="sol__index">04</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Infrastructure Solutions<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">Self-optimizing infrastructure powered by AI that automatically scales resources, predicts failures and optimizes performance. Cognitive systems learn your workload patterns to deliver maximum efficiency and reliability.</p>
+              <div class="sol__tags"><span>Data Centers</span><span>Storage</span><span>Virtualization</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0" style="transition-delay:.06s">
+            <div class="sol__media">
+              <img src="./Network-Design-scaled.jpeg" alt="Network engineering" loading="lazy" />
+              <span class="sol__index">05</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8 6h8M8 7.6 11 16M16 7.6 13 16"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Network Engineering<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">AI-driven network optimization with intelligent traffic routing, predictive congestion management and automated threat detection. Machine learning continuously analyzes patterns to enhance security and performance.</p>
+              <div class="sol__tags"><span>CloudCampus</span><span>SD-WAN</span><span>WiFi 7</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0" style="transition-delay:.12s">
+            <div class="sol__media">
+              <img src="./cybersecurity-digital-background-3-min.png" alt="Cybersecurity" loading="lazy" />
+              <span class="sol__index">06</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3Z"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Cybersecurity<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">Advanced zero-trust security that protects your infrastructure from evolving threats. Continuous compliance monitoring and resilient automated failover are baked into every layer of your stack.</p>
+              <div class="sol__tags"><span>Zero-Trust</span><span>Compliance</span><span>SOC</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0">
+            <div class="sol__media">
+              <img src="./1693228049_1679943811_OIG-website-thumbnail-image_command-and-control-C4IT.jpg" alt="System integration" loading="lazy" />
+              <span class="sol__index">07</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 12l9 5 9-5M3 16l9 5 9-5"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">System Integration<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">Seamless integration of diverse systems and technologies into unified, efficient solutions — orchestrated end to end with APIs, middleware and automation that work together flawlessly.</p>
+              <div class="sol__tags"><span>APIs</span><span>Middleware</span><span>Automation</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0" style="transition-delay:.06s">
+            <div class="sol__media">
+              <img src="./untitled-design-5.png" alt="Managed services" loading="lazy" />
+              <span class="sol__index">08</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3.5 2.5"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Managed Services<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">24/7 monitoring and proactive operations with predictive maintenance and carbon-aware optimization — keeping your infrastructure online, efficient and effortless to run.</p>
+              <div class="sol__tags"><span>24/7 NOC</span><span>Monitoring</span><span>SLAs</span></div>
+            </div>
+          </article>
+
+          <article class="sol reveal" data-cursor="view" tabindex="0" style="transition-delay:.12s">
+            <div class="sol__media">
+              <img src="./cyber-security-concept-digital-art_23-2151637760.jpg" alt="Digital transformation" loading="lazy" />
+              <span class="sol__index">09</span>
+              <span class="sol__icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8L12 3Z"/><path d="M18 14l.9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9L18 14Z"/></svg>
+              </span>
+            </div>
+            <div class="sol__body">
+              <h3 class="sol__title">Digital Transformation<span class="sol__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+              <p class="sol__desc">End-to-end digital transformation including turnkey ERP systems, energy management, gamification platforms and augmented reality. Transform your business operations with cutting-edge technology.</p>
+              <div class="sol__tags"><span>ERP Systems</span><span>Energy Management</span><span>Gamification</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ STATS ============ -->
+      <section class="command" id="command">
+        <div class="section-head section-head--dark">
+          <p class="eyebrow reveal">By the numbers</p>
+          <h2 class="section-title reveal">Proven at scale, <span class="grad">engineered to last.</span></h2>
+        </div>
+        <div class="stats" id="stats">
+          <div class="stat reveal"><h3 class="stat__num" data-count="500" data-suffix="+">0</h3><p class="stat__label">Deployments</p></div>
+          <div class="stat reveal"><h3 class="stat__num" data-count="15" data-suffix="+">0</h3><p class="stat__label">Years innovation</p></div>
+          <div class="stat reveal"><h3 class="stat__num" data-count="99.99" data-suffix="%" data-decimals="2">0</h3><p class="stat__label">System reliability</p></div>
+          <div class="stat reveal"><h3 class="stat__num" data-count="42" data-suffix="">0</h3><p class="stat__label">Regions covered</p></div>
+        </div>
+      </section>
+
+      <!-- ============ DATA CENTER BUILD JOURNEY (scroll film) ============ -->
+      <section class="journey" id="journey" aria-label="Data center build journey">
+        <div class="journey__sticky">
+          <!-- HUD -->
+          <div class="journey__hud" aria-hidden="true">
+            <span class="journey__hud-tag"><i></i> Build sequence</span>
+            <span class="journey__hud-count"><strong id="journeyStepNum">01</strong><em> / 07</em></span>
+          </div>
+
+          <!-- Animated stage -->
+          <div class="journey__stage" aria-hidden="true">
+            <div class="journey__stage-glow"></div>
+            <svg class="journey__svg" viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Data center assembling layer by layer">
+              <defs>
+                <linearGradient id="jMetal" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2a3340"/><stop offset="1" stop-color="#141a22"/>
+                </linearGradient>
+                <linearGradient id="jSteel" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#7fa8ca"/><stop offset="1" stop-color="#3a5f86"/>
+                </linearGradient>
+                <linearGradient id="jFloor" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1c232d"/><stop offset="1" stop-color="#0e131a"/>
+                </linearGradient>
+              </defs>
+
+              <!-- ambient back wall (always on) -->
+              <g class="jbg" opacity="0.5">
+                <line x1="150" y1="130" x2="150" y2="500" stroke="#223" stroke-width="1"/>
+                <line x1="850" y1="130" x2="850" y2="500" stroke="#223" stroke-width="1"/>
+                <line x1="150" y1="200" x2="850" y2="200" stroke="#1b2430" stroke-width="1"/>
+                <line x1="150" y1="300" x2="850" y2="300" stroke="#1b2430" stroke-width="1"/>
+                <line x1="150" y1="400" x2="850" y2="400" stroke="#1b2430" stroke-width="1"/>
+              </g>
+
+              <!-- 01 Structured cabling -->
+              <g class="jlayer" data-i="0">
+                <rect x="250" y="96" width="500" height="20" rx="4" fill="url(#jMetal)" stroke="#3a5f86" stroke-width="1.5"/>
+                <path d="M330 116 q0 50 0 70" stroke="#d1933f" stroke-width="3" fill="none"/>
+                <path d="M360 116 q0 60 0 80" stroke="#d1933f" stroke-width="3" fill="none"/>
+                <path d="M470 116 q0 44 0 64" stroke="#7fa8ca" stroke-width="3" fill="none"/>
+                <path d="M500 116 q0 54 0 74" stroke="#7fa8ca" stroke-width="3" fill="none"/>
+                <path d="M630 116 q0 50 0 70" stroke="#d1933f" stroke-width="3" fill="none"/>
+                <path d="M660 116 q0 60 0 80" stroke="#7fa8ca" stroke-width="3" fill="none"/>
+                <rect x="252" y="100" width="496" height="4" rx="2" fill="#7fa8ca" opacity="0.7"/>
+              </g>
+
+              <!-- 02 Raised access floor -->
+              <g class="jlayer" data-i="1">
+                <rect x="150" y="500" width="700" height="14" fill="#2a3340"/>
+                <rect x="150" y="514" width="700" height="46" fill="url(#jFloor)" stroke="#2a3340" stroke-width="1"/>
+                <g fill="none" stroke="#3a5f86" stroke-width="1" opacity="0.8">
+                  <line x1="230" y1="514" x2="230" y2="560"/><line x1="330" y1="514" x2="330" y2="560"/>
+                  <line x1="430" y1="514" x2="430" y2="560"/><line x1="530" y1="514" x2="530" y2="560"/>
+                  <line x1="630" y1="514" x2="630" y2="560"/><line x1="730" y1="514" x2="730" y2="560"/>
+                </g>
+                <g fill="#5689b6" opacity="0.6">
+                  <circle cx="190" cy="507" r="2"/><circle cx="210" cy="507" r="2"/><circle cx="230" cy="507" r="2"/>
+                  <circle cx="770" cy="507" r="2"/><circle cx="790" cy="507" r="2"/><circle cx="810" cy="507" r="2"/>
+                </g>
+              </g>
+
+              <!-- 03 Data center containment -->
+              <g class="jlayer" data-i="2">
+                <rect x="206" y="150" width="588" height="350" fill="none" stroke="#5689b6" stroke-width="2" stroke-dasharray="7 6" rx="6"/>
+                <rect x="206" y="150" width="588" height="26" fill="#5689b6" opacity="0.14"/>
+                <rect x="206" y="150" width="10" height="350" fill="#5689b6" opacity="0.12"/>
+                <rect x="784" y="150" width="10" height="350" fill="#5689b6" opacity="0.12"/>
+                <rect x="596" y="136" width="158" height="22" rx="4" fill="#3a5f86"/>
+                <text x="675" y="151" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#fff">CONTAINMENT</text>
+              </g>
+
+              <!-- 04 UPS -->
+              <g class="jlayer" data-i="3">
+                <rect x="248" y="250" width="92" height="250" rx="4" fill="url(#jMetal)" stroke="#3a5f86" stroke-width="1.5"/>
+                <rect x="262" y="266" width="64" height="40" rx="3" fill="#0e131a" stroke="#3a5f86"/>
+                <path class="jbolt" d="M300 276 l-12 20 h9 l-6 18 18 -24 h-9 z" fill="#7fa8ca"/>
+                <g fill="#5689b6"><rect x="262" y="320" width="64" height="8" rx="2"/><rect x="262" y="336" width="64" height="8" rx="2"/><rect x="262" y="352" width="64" height="8" rx="2"/></g>
+                <text x="294" y="490" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700" fill="#7fa8ca">UPS</text>
+              </g>
+
+              <!-- 05 Lithium batteries -->
+              <g class="jlayer" data-i="4">
+                <rect x="352" y="312" width="74" height="188" rx="4" fill="url(#jMetal)" stroke="#3a5f86" stroke-width="1.5"/>
+                <g class="jcell">
+                  <rect x="364" y="326" width="50" height="22" rx="3" fill="#13202c" stroke="#5689b6"/>
+                  <rect x="364" y="356" width="50" height="22" rx="3" fill="#13202c" stroke="#5689b6"/>
+                  <rect x="364" y="386" width="50" height="22" rx="3" fill="#13202c" stroke="#5689b6"/>
+                  <rect x="364" y="416" width="50" height="22" rx="3" fill="#13202c" stroke="#5689b6"/>
+                </g>
+                <text x="389" y="490" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700" fill="#7fa8ca">Li-ion</text>
+              </g>
+
+              <!-- 06 In-row cooling -->
+              <g class="jlayer" data-i="5">
+                <rect x="620" y="250" width="92" height="250" rx="4" fill="url(#jMetal)" stroke="#3a5f86" stroke-width="1.5"/>
+                <g stroke="#3a5f86" stroke-width="2">
+                  <line x1="634" y1="268" x2="698" y2="268"/><line x1="634" y1="282" x2="698" y2="282"/><line x1="634" y1="296" x2="698" y2="296"/><line x1="634" y1="310" x2="698" y2="310"/>
+                </g>
+                <g class="jair" fill="none" stroke="#7fa8ca" stroke-width="2.5" stroke-linecap="round">
+                  <path d="M616 360 h-40"/><path d="M616 390 h-40"/><path d="M616 420 h-40"/>
+                </g>
+                <text x="666" y="490" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700" fill="#7fa8ca">CRAC</text>
+              </g>
+
+              <!-- 07 Active rack -->
+              <g class="jlayer" data-i="6">
+                <rect x="446" y="188" width="128" height="312" rx="5" fill="url(#jMetal)" stroke="#5689b6" stroke-width="2"/>
+                <rect x="446" y="188" width="128" height="22" rx="5" fill="#3a5f86"/>
+                <g class="jrack">
+                  <rect x="458" y="220" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="250" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="280" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="310" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="340" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="370" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="400" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="430" width="104" height="24" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                  <rect x="458" y="460" width="104" height="30" rx="2" fill="#10151c" stroke="#3a5f86"/>
+                </g>
+                <g class="jleds">
+                  <circle cx="468" cy="232" r="3" fill="#6ee7a8"/><circle cx="480" cy="232" r="3" fill="#7fa8ca"/>
+                  <circle cx="468" cy="262" r="3" fill="#7fa8ca"/><circle cx="480" cy="262" r="3" fill="#6ee7a8"/>
+                  <circle cx="468" cy="292" r="3" fill="#6ee7a8"/><circle cx="480" cy="292" r="3" fill="#6ee7a8"/>
+                  <circle cx="468" cy="322" r="3" fill="#7fa8ca"/><circle cx="480" cy="322" r="3" fill="#6ee7a8"/>
+                  <circle cx="468" cy="352" r="3" fill="#6ee7a8"/><circle cx="480" cy="352" r="3" fill="#7fa8ca"/>
+                  <circle cx="468" cy="382" r="3" fill="#6ee7a8"/><circle cx="480" cy="382" r="3" fill="#6ee7a8"/>
+                  <circle cx="468" cy="412" r="3" fill="#7fa8ca"/><circle cx="480" cy="412" r="3" fill="#6ee7a8"/>
+                  <circle cx="468" cy="442" r="3" fill="#6ee7a8"/><circle cx="480" cy="442" r="3" fill="#6ee7a8"/>
+                </g>
+              </g>
+            </svg>
+            <div class="journey__scan"></div>
+          </div>
+
+          <!-- Narrative panels -->
+          <div class="journey__text">
+            <p class="journey__eyebrow">Build journey</p>
+            <h2 class="journey__title">From an empty shell to a <span class="grad">living data center.</span></h2>
+            <div class="journey__panels">
+              <article class="jpanel is-active" data-i="0">
+                <p class="jpanel__phase">01 · Passive layer</p>
+                <h3 class="jpanel__title">Structured Cabling</h3>
+                <p class="jpanel__desc">The backbone first — copper (Cat6A) and fiber-optic trunks, patch panels and engineered pathways built for density, airflow and future growth.</p>
+                <div class="jpanel__tags"><span>Copper · Cat6A</span><span>Fiber Optic</span><span>Patch Panels</span></div>
+              </article>
+              <article class="jpanel" data-i="1">
+                <p class="jpanel__phase">02 · Foundation</p>
+                <h3 class="jpanel__title">Raised Access Floor</h3>
+                <p class="jpanel__desc">A modular raised floor creates the plenum for cold-air distribution and clean cable management, load-rated for heavy cabinets and serviceable for life.</p>
+                <div class="jpanel__tags"><span>Airflow Plenum</span><span>Cable Mgmt</span><span>Load-rated</span></div>
+              </article>
+              <article class="jpanel" data-i="2">
+                <p class="jpanel__phase">03 · Containment</p>
+                <h3 class="jpanel__title">Data Center Containment</h3>
+                <p class="jpanel__desc">A pre-integrated modular data center with hot/cold-aisle containment — power, cooling, monitoring and management delivered as one engineered system.</p>
+                <div class="jpanel__tags"><span>Hot/Cold Aisle</span><span>Prefabricated</span><span>Containment</span></div>
+              </article>
+              <article class="jpanel" data-i="3">
+                <p class="jpanel__phase">04 · Power protection</p>
+                <h3 class="jpanel__title">UPS Systems</h3>
+                <p class="jpanel__desc">Online double-conversion UPS delivers clean, uninterrupted power with N+1 redundancy — isolating the load from every grid disturbance.</p>
+                <div class="jpanel__tags"><span>Double-Conversion</span><span>N+1 Redundant</span><span>Clean Power</span></div>
+              </article>
+              <article class="jpanel" data-i="4">
+                <p class="jpanel__phase">05 · Energy storage</p>
+                <h3 class="jpanel__title">Lithium Batteries</h3>
+                <p class="jpanel__desc">High-density lithium battery banks replace legacy VRLA — longer service life, a smaller footprint and intelligent BMS monitoring of every cell.</p>
+                <div class="jpanel__tags"><span>Li-ion</span><span>Smart BMS</span><span>Long-life</span></div>
+              </article>
+              <article class="jpanel" data-i="5">
+                <p class="jpanel__phase">06 · Thermal</p>
+                <h3 class="jpanel__title">In-Row Precision Cooling</h3>
+                <p class="jpanel__desc">In-row air conditioning sits right beside the heat source for precise, efficient thermal control — tracking load in real time to cut energy waste.</p>
+                <div class="jpanel__tags"><span>In-Row AC</span><span>Precision</span><span>Energy Efficient</span></div>
+              </article>
+              <article class="jpanel" data-i="6">
+                <p class="jpanel__phase">07 · Active layer · inside the cabinet</p>
+                <h3 class="jpanel__title">Compute, Storage &amp; Network Go Live</h3>
+                <p class="jpanel__desc">With the environment ready, the rack comes alive. We rack, stack, cable and configure the active stack end to end — then hand over a fully commissioned, monitored system.</p>
+                <div class="jpanel__tags jpanel__tags--grid"><span>Servers</span><span>Storage</span><span>Switches</span><span>NGFW</span><span>Routers</span><span>Wireless Controller</span><span>Access Points</span><span>&amp; more</span></div>
+              </article>
+            </div>
+          </div>
+
+          <!-- progress meter -->
+          <div class="journey__meter" aria-hidden="true"><span id="journeyMeter"></span></div>
+        </div>
+      </section>
+
+      <!-- ============ GLOBAL PRESENCE ============ -->
+      <section class="global" id="global">
+        <div class="global__head">
+          <p class="eyebrow reveal">Global presence</p>
+          <h2 class="section-title reveal">One accountable team, <span class="grad">across six markets.</span></h2>
+        </div>
+        <div class="global__countries" id="globalCountries">
+          <article class="country reveal">
+            <div class="country__top">
+              <img src="https://flagcdn.com/w80/lb.png" alt="Lebanon flag" loading="lazy"/>
+              <div class="country__name"><strong>Lebanon Office</strong><span class="country__badge">HQ</span></div>
+            </div>
+            <ul class="country__details">
+              <li><span class="country__k">Address</span><span class="country__v">Dekwaneh, 501 Street, 108 Asmar Bldg, 1st Floor — P.O. Box 50-110, Beirut, Lebanon</span></li>
+              <li><span class="country__k">Phone</span><span class="country__v"><a href="tel:+9611411400">+961 1 411 400</a> · Fax +961 1 411 411</span></li>
+              <li><span class="country__k">Email</span><span class="country__v"><a href="mailto:info@ipengpro.com">info@ipengpro.com</a></span></li>
+            </ul>
+          </article>
+          <article class="country reveal">
+            <div class="country__top">
+              <img src="https://flagcdn.com/w80/ae.png" alt="United Arab Emirates flag" loading="lazy"/>
+              <div class="country__name"><strong>UAE Office</strong><span class="country__badge">HQ</span></div>
+            </div>
+            <ul class="country__details">
+              <li><span class="country__k">Address</span><span class="country__v">DTEC, Dubai Silicon Oasis — P.O. Box 342128, Dubai, UAE</span></li>
+              <li><span class="country__k">Phone</span><span class="country__v"><a href="tel:+971554794617">+971 55 479 4617</a> · <a href="tel:+971565421409">+971 56 542 1409</a></span></li>
+              <li><span class="country__k">Email</span><span class="country__v"><a href="mailto:info@ipengpro.com">info@ipengpro.com</a></span></li>
+            </ul>
+          </article>
+          <article class="country reveal">
+            <div class="country__top">
+              <img src="https://flagcdn.com/w80/jo.png" alt="Jordan flag" loading="lazy"/>
+              <div class="country__name"><strong>Jordan Office</strong></div>
+            </div>
+            <ul class="country__details">
+              <li><span class="country__k">Address</span><span class="country__v">Arar Mustafa Wahbi Al Tal Street, Armada Tower, 1st Floor, Amman, Jordan</span></li>
+              <li><span class="country__k">Phone</span><span class="country__v"><a href="tel:+962782930959">+962 7 8293 0959</a></span></li>
+              <li><span class="country__k">Email</span><span class="country__v"><a href="mailto:info@ipengpro.com">info@ipengpro.com</a></span></li>
+            </ul>
+          </article>
+          <article class="country reveal">
+            <div class="country__top">
+              <img src="https://flagcdn.com/w80/fr.png" alt="France flag" loading="lazy"/>
+              <div class="country__name"><strong>France Office</strong></div>
+            </div>
+            <ul class="country__details">
+              <li><span class="country__k">Address</span><span class="country__v">Les Clayes-sous-Bois, France</span></li>
+              <li><span class="country__k">Phone</span><span class="country__v"><a href="tel:+33614155614">+33 6 14 15 56 14</a></span></li>
+              <li><span class="country__k">Email</span><span class="country__v"><a href="mailto:info@ipengpro.com">info@ipengpro.com</a></span></li>
+            </ul>
+          </article>
+          <article class="country reveal">
+            <div class="country__top">
+              <img src="https://flagcdn.com/w80/eg.png" alt="Egypt flag" loading="lazy"/>
+              <div class="country__name"><strong>Egypt Office</strong></div>
+            </div>
+            <ul class="country__details">
+              <li><span class="country__k">Address</span><span class="country__v">Cairo, Egypt</span></li>
+              <li><span class="country__k">Phone</span><span class="country__v"><a href="tel:+2025408706">+20 254 087 06</a></span></li>
+              <li><span class="country__k">Email</span><span class="country__v"><a href="mailto:info@ipengpro.com">info@ipengpro.com</a></span></li>
+            </ul>
+          </article>
+          <article class="country reveal">
+            <div class="country__top">
+              <img src="https://flagcdn.com/w80/sa.png" alt="Saudi Arabia flag" loading="lazy"/>
+              <div class="country__name"><strong>KSA Office</strong></div>
+            </div>
+            <ul class="country__details">
+              <li><span class="country__k">Address</span><span class="country__v">Riyadh, Saudi Arabia</span></li>
+              <li><span class="country__k">Email</span><span class="country__v"><a href="mailto:info@ipengpro.com">info@ipengpro.com</a></span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ CTA ============ -->
+      <section class="cta" id="contact">
+        <div class="cta__inner">
+          <p class="eyebrow reveal">Let's build</p>
+          <h2 class="cta__title reveal-stagger">
+            <span>Intelligently automating</span>
+            <span class="grad">your digital transformation.</span>
+          </h2>
+          <div class="cta__actions reveal">
+            <a href="mailto:info@ipengpro.com" class="pill pill--solid pill--lg" data-magnetic data-cursor="link"><span>Start a project</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="tel:+9611411400" class="pill pill--ghost pill--lg" data-magnetic data-cursor="link"><span>+961 1 411 400</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="./logo ip eng pro final-2-reverse (1).png" alt="IP Engineering Pro" class="footer__logo" />
+          <p>Edge to Cloud Solutions. We architect intelligent systems that sense, decide and adapt.</p>
+          <div class="footer__contact">
+            <a href="mailto:info@ipengpro.com" data-cursor="link">info@ipengpro.com</a>
+            <a href="tel:+9611411400" data-cursor="link">+961 1 411 400</a>
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div><h4>Solutions</h4><a href="#services" data-cursor="link">Edge to Cloud</a><a href="#services" data-cursor="link">Artificial Intelligence</a><a href="#services" data-cursor="link">Internet of Things</a><a href="#services" data-cursor="link">Cybersecurity</a></div>
+          <div><h4>Expertise</h4><a href="#services" data-cursor="link">Infrastructure</a><a href="#services" data-cursor="link">Network Engineering</a><a href="#services" data-cursor="link">Digital Transformation</a><a href="#services" data-cursor="link">Managed Services</a></div>
+          <div><h4>Company</h4><a href="#global" data-cursor="link">About</a><a href="#services" data-cursor="link">Services</a><a href="#contact" data-cursor="link">Contact</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> IP Engineering Pro. All rights reserved.</span>
+        <span>Intelligently automating your digital transformation.</span>
+      </div>
+    </footer>
+
+    <script src="./globe-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
